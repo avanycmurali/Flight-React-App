@@ -3,13 +3,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import NavigationBar from './components/NavigationBar'
+import Home from './components/Home'
+import AddFlight from './components/AddFlight'
+import ViewFlight from './components/ViewFlight'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      
+     <BrowserRouter>
+     <Routes>
+      <Route path="/"element={<Home/>}/>
+      <Route path="/Add"element={<AddFlight/>}/>
+      <Route path="/view"element={<ViewFlight/>}/>
+     </Routes>
+     </BrowserRouter>
     </>
   )
 }
