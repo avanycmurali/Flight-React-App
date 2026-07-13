@@ -5,14 +5,15 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import NavigationBar from './components/NavigationBar'
 import Home from './components/Home'
+import ViewFlight from './components/ViewFlight'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <NavigationBar/>
       <Home/>
+      <ViewFlight/>
     </>
   )
 }
