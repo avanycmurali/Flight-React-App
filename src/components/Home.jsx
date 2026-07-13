@@ -1,8 +1,10 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 const Home = () => {
   return (
     <div>
+        <NavigationBar/>
       {/* Hero Section */}
       <div
         className="container-fluid text-white d-flex align-items-center"
