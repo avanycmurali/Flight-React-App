@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import NavigationBar from './components/NavigationBar'
+import Home from './components/Home'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <NavigationBar/>
+      <Home/>
     </>
   )
 }
